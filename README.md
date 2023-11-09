@@ -2,10 +2,14 @@
 
 1. Create a new Maven Project
 
-2. Copy the dependecies and 
+2. Copy the dependecies and the plugin from pom.xml into your Pom.xml file
 
-3. Generate Maven Project: Right-click on the project in Eclipse and select the "Run as" option, followed by "Maven Generate".
+3. Copy the math_operations.proto from src/main/resources into your src/main/resources
 
-4. Implement Server-Side Services: Implement the necessary services on the server side.
+4. Run your project as Maven Generate-sources : this will generate Java files into your src/main/java
 
-5. Run Server and Client Projects: Run both the server and client projects as Java projects.
+5. Then implement the services in your proto file, in this case copy MathServiceImpl.java and MathServer.java and MathClient.java into  src/main/java
+
+6. Run MathServer.java first as a Java project then run the MathClient.java
+
+congratulations you have a your first working Java Grpc project ☺
