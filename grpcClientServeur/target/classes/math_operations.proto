@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+service MathService {
+  
+  rpc CalculateFactorial (FactorialRequest) returns (FactorialResponse);
+
+  
+  rpc CalculatePower (PowerRequest) returns (PowerResponse);
+}
+
+message FactorialRequest {
+  int32 number = 1;
+}
+
+message FactorialResponse {
+  int64 result = 1;
+}
+
+message PowerRequest {
+  int32 base = 1;
+  int32 exponent = 2;
+}
+
+message PowerResponse {
+  int64 result = 1;
+}
